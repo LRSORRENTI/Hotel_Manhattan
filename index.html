@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/ico" href="/assets/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hotel Manhattan</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="logo nav__logo">
+            <div>HM</div>
+            <span>HOTEL<br />MANHATTAN</span>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#room">Rooms</a></li>
+          <li><a href="#feature">Features</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#news">News</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header" id="home">
+      <div class="section__container header__container">
+        <p class="section__subheader"></p>
+        <h1>Indulge In Unmatched Luxury At Hotel Manhattan</h1>
+        <a href="#about"><button class="btn" >Take A Tour</button></a>
+      </div>
+    </header>
+
+    <section class="booking">
+      <div class="section__container booking__container">
+        <form action="/">
+          <div class="input__group">
+            <label for="arrival">Arrival Date</label>
+            <input type="text" placeholder="Your Arrival Date" />
+          </div>
+          <div class="input__group">
+            <label for="departure">Departure Date</label>
+            <input type="text" placeholder="Your Departure Date" />
+          </div>
+          <div class="input__group">
+            <label for="guests">Guests</label>
+            <input type="text" placeholder="No Of Guests" />
+          </div>
+          <button class="btn">Check Availability</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__grid">
+          <div class="about__image">
+            <img src="assets/hotelimgs/pool.jpg" alt="Luxurious Poolside Retreat" />
+          </div>
+          <div class="about__card">
+            <span><i class="ri-user-line"></i></span>
+            <h4>Exceptional Team</h4>
+            <p>
+              Our dedicated team unlocks hospitality excellence, ensuring every moment of your stay is perfect.
+            </p>
+          </div>
+          <div class="about__image">
+            <img src="assets/hotelimgs/room5.webp" alt="Luxurious Room Interior" />
+          </div>
+          <div class="about__card">
+            <span><i class="ri-calendar-check-line"></i></span>
+            <h4>Unrivaled Accommodations</h4>
+            <p>
+              Immerse yourself in the unrivaled elegance of our exquisite luxury rooms, where comfort meets sophistication.
+            </p>
+          </div>
+        </div>
+        <div class="about__content">
+          <p class="section__subheader">ABOUT US</p>
+          <h2 class="section__header">Explore Our Unmatched Amenities</h2>
+          <p class="section__description">
+            Welcome to a sanctuary of extraordinary accommodations where luxury, comfort, and adventure unite. Nestled beneath the vibrant cityscape, our underground hotel offers a unique escape, inviting you to explore a world of subterranean wonders.
+          </p>
+          <button class="btn">Book Your Stay</button>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="room__container" id="room">
+      <p class="section__subheader">ROOMS</p>
+      <h2 class="section__header">Hand Picked Rooms</h2>
+      <div class="room__grid">
+        <div class="room__card">
+          <img src="assets/hotelimgs/room1.jpg" alt="room" />
+          <div class="room__card__details">
+            <div>
+              <h4>Deluxe Suite</h4>
+              <p>Well-appointed rooms designed for guests who desire a more.</p>
+            </div>
+            <h3>$399<span>/night</span></h3>
+          </div>
+        </div>
+        <div class="room__card">
+          <img src="assets/hotelimgs/room6.jpg" alt="room" />
+          <div class="room__card__details">
+            <div>
+              <h4>Master Suite</h4>
+              <p>Consist of multiple rooms and a common living area.</p>
+            </div>
+            <h3>$599<span>/night</span></h3>
+          </div>
+        </div>
+        <div class="room__card">
+          <img src="assets/hotelimgs/room2.webp" alt="room" />
+          <div class="room__card__details">
+            <div>
+              <h4>Luxury Penthouse</h4>
+              <p>
+                Top-tier accommodations usually on the highest floors of a
+                hotel.
+              </p>
+            </div>
+            <h3>$799<span>/night</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="section__container intro__container">
+        <div class="intro__content">
+          <p class="section__subheader">EXPLORE</p>
+          <h2 class="section__header">Explore Our Luxurious Suites</h2>
+          <p class="section__description">
+            Whether you desire a cozy, exclusive hideaway or an immersive journey into the extraordinary, Hotel Manhattan promises an unforgettable experience where ultimate comfort and excitement await your arrival.
+          </p>
+          <button class="btn">Reserve Your Escape</button>
+        </div>
+        <div class="intro__video">
+          <img src="assets/hotelimgs/room4.jpg" alt="Luxurious Room Interior" />
+        </div>
+      </div>
+    </section>
+    <section class="section__container feature__container" id="feature">
+      <p class="section__subheader">WORLD-CLASS AMENITIES</p>
+      <h2 class="section__header">Discover Our Exceptional Features</h2>
+      <div class="feature__grid">
+        <div class="feature__card">
+          <span><i class="ri-thumb-up-line"></i></span>
+          <h4>Outstanding Ratings</h4>
+          <p>
+            Our hotel is renowned for its stellar ratings and glowing reviews, a testament to our commitment to excellence and unparalleled guest satisfaction.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-sparkling-line"></i></span>
+          <h4>Peaceful Retreats</h4>
+          <p>
+            Enjoy tranquil and serene surroundings with our dedicated quiet hours, ensuring a restful and rejuvenating stay amid the vibrant city life.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-map-pin-line"></i></span>
+          <h4>Prime Manhattan Location</h4>
+          <p>
+            Nestled in the heart of Manhattan, our hotel offers unrivaled access to iconic landmarks, shopping, dining, and entertainment, making your stay unforgettable.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-close-circle-line"></i></span>
+          <h4>Flexible Cancellation</h4>
+          <p>
+            We offer free cancellation to provide you with peace of mind and flexibility, accommodating the unpredictable nature of travel plans.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-wallet-line"></i></span>
+          <h4>Versatile Payment Options</h4>
+          <p>
+            Choose from a wide array of secure payment methods, designed to make your booking experience seamless and hassle-free.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-coupon-line"></i></span>
+          <h4>Exclusive Offers</h4>
+          <p>
+            Take advantage of our exclusive offers, whether you're here for a romantic escape or a productive business trip, tailored to elevate your experience.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="menu" id="menu">
+      <div class="section__container menu__container">
+        <div class="menu__header">
+          <div>
+            <p class="section__subheader">MENU</p>
+            <h2 class="section__header">Our Food Menu</h2>
+          </div>
+          <div class="section__nav">
+            <span id="prev"><i class="ri-arrow-left-line"></i></span>
+            <span id="next"><i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+        <ul class="menu__items">
+          <li class="page page-1">
+            <img src="assets/foodIMGS/eggsBacon.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Eggs & Bacon</h4>
+              <p>It is a culinary innovation that puts a unique spin on the beloved breakfast combination.</p>
+            </div>
+          </li>
+          <li class="page page-1">
+            <img src="assets/foodIMGS/teaCoffee.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Tea & Coffee</h4>
+              <p>A classic choice for your daily dose of comfort and calmness.</p>
+            </div>
+          </li>
+          <li class="page page-1">
+            <img src="assets/foodIMGS/apricot-honey-oatmeal.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Apricot Honey Oatmeal</h4>
+              <p>Our Apricot Honey Oatmeal is a wholesome nutrient-packed breakfast delight.</p>
+            </div>
+          </li>
+          <li class="page page-1">
+            <img src="assets/foodIMGS/Avocado-black-bean-eggs.webp" alt="menu" />
+            <div class="menu__details">
+              <h4>Avacado & Eggs</h4>
+              <p>Our Fruit Parfait is a delightful culinary masterpiece of freshness and flavor.</p>
+            </div>
+          </li>
+          <li class="page page-1">
+            <img src="assets/foodIMGS/jam.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Jam Selection</h4>
+              <p>Our Jams & Marmalade Selection is a delectable medley of vibrant, handcrafted citrus preserves.</p>
+            </div>
+          </li>
+          <li class="page page-1">
+            <img src="assets/foodIMGS/blueberry-oatmeal-muffins.webp" alt="menu" />
+            <div class="menu__details">
+              <h4>Blueberry Oatmeal Muffins</h4>
+              <p>Our cheese plate is a masterpiece that celebrates rich and diverse world of cheeses.</p>
+            </div>
+          </li>
+          <!-- PAGINATION SEPARATOR -->
+          <li class="page page-2">
+            <img src="assets/foodIMGS/NYStrip.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>New York Strip</h4>
+              <p>Our New York Strip is perfectly seared, served with a side of scalloped potatoes and grilled vegetables.</p>
+            </div>
+          </li>
+          <li class="page page-2">
+            <img src="assets/foodIMGS/surfnturf.webp" alt="menu" />
+            <div class="menu__details">
+              <h4>Surf n' Turf</h4>
+              <p>A classic pairing of flame-seared filet mignon, and direct from Maine lobster.</p>
+            </div>
+          </li>
+          <li class="page page-2">
+            <img src="assets/foodIMGS/risotto.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Mushroom Risotto</h4>
+              <p>Creamy mushroom risotto paired with a side of angel hair linguine drizzled in a white wine sauce.</p>
+            </div>
+          </li>
+          <li class="page page-2">
+            <img src="assets/foodIMGS/spaghetti.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Spaghetti Bolognese</h4>
+              <p>Hearty spaghetti prepared with Wagyu beef, onions, tomatoes, and rosemary.</p>
+            </div>
+          </li>
+          <li class="page page-2">
+            <img src="assets/foodIMGS/duck.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Garlic Roasted Duck Breast</h4>
+              <p>Duck breast. Pan seared, then roasted with garlic and rosemary. Served with a side of grilled vegetables and onion soup.</p>
+            </div>
+          </li>
+          <li class="page page-2">
+            <img src="assets/foodIMGS/seabass.webp" alt="menu" />
+            <div class="menu__details">
+              <h4>Grilled Sea Bass</h4>
+              <p>Grilled Sea Bass served with a rosemary and lemon glaze with Cerignola olives.</p>
+            </div>
+          </li>
+        </ul>
+        <div class="menu__images">
+          <img src="assets/foodIMGS/food2.jpg" alt="menu" />
+          <img src="assets/foodIMGS/food1.jpg" alt="menu" />
+          <img src="assets/foodIMGS/food3.jpg" alt="menu" />
+        </div>
+        <ul class="menu__banner">
+          <li>
+            <span><i class="ri-calendar-event-line"></i></i></span>
+            <h4>1000+</h4>
+            <p>Events Hosted Per Year</p>
+          </li>
+          <li>
+            <span><i class="ri-user-line"></i></span>
+            <h4>3M</h4>
+            <p>Happy Guests Since 1990 </p>
+          </li>
+          <li>
+            <span><i class="ri-restaurant-2-line"></i></span>
+            <h4>3</h4>
+            <p>Unique Hotel Restaurants</p>
+          </li>
+          <li>
+            <span><i class="ri-wifi-line"></i></span>
+            <h4>40</h4>
+            <p>MBPS - Fast Internet</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section__container news__container" id="news">
+      <div class="news__header">
+        <div>
+          <p class="section__subheader">INSIDER'S BLOG</p>
+          <h2 class="section__header">Latest Happenings</h2>
+        </div>
+        <div class="section__nav">
+        </div>
+      </div>
+      <div class="news__grid">
+        <div class="news__card">
+          <img src="assets/hotelimgs/gym.webp" alt="State of the Art Hotel Gym" />
+          <div class="news__card__title">
+            <p>25th March 2024</p>
+            <p>By Emilio</p>
+          </div>
+          <h4>Unveiling Our Fully Renovated, State-of-the-Art Gym</h4>
+          <p>
+            Step into our cutting-edge fitness center and discover the latest equipment and personalized training experiences designed to invigorate your body and elevate your fitness journey.
+          </p>
+        </div>
+        <div class="news__card">
+          <img src="assets/hotelimgs/spa.jpg" alt="Balancing Mind, Body, and Soul at Our Hotel" />
+          <div class="news__card__title">
+            <p>15th June 2024</p>
+            <p>By Daniel</p>
+          </div>
+          <h4>Harmony and Wellness: Elevate Your Experience</h4>
+          <p>
+            Immerse yourself in a sanctuary of serenity with our holistic spa treatments, rejuvenating fitness facilities, and mindfulness practices designed to balance mind, body, and soul.
+          </p>
+        </div>
+        <div class="news__card">
+          <img src="assets/hotelimgs/city.jpg" alt="Exploring Outdoor Activities Near Our Hotel" />
+          <div class="news__card__title">
+            <p>08th August 2022</p>
+            <p>By Evelyn</p>
+          </div>
+          <h4>Adventure Awaits: Explore New York</h4>
+          <p>
+            Embark on exciting adventures in NYC with our curated list of must-see sights and locations just steps from our hotel.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <div>HM</div>
+            <span>HOTEL<br />Manhattan</span>
+          </div>
+          <p class="section__description">
+            Welcome to Hotel Manhattan, where elegance meets comfort in the heart of New York City. Experience world-class hospitality and discover a sanctuary of luxury and relaxation.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Our Services</h4>
+          <div class="footer__links">
+            <li><a href="#">Online Booking</a></li>
+            <li><a href="#">Room Personalization</a></li>
+            <li><a href="#">Virtual Tours</a></li>
+            <li><a href="#">Exclusive Packages</a></li>
+            <li><a href="#">Concierge Assistance</a></li>
+            <li><a href="#">Guest Support</a></li>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Information</h4>
+          <div class="footer__links">
+            <li>
+              <span><i class="ri-phone-fill"></i></span>
+              <div>
+                <h5>Phone</h5>
+                <p>+1 (212) 555-0101</p>
+              </div>
+            </li>
+            <li>
+              <span><i class="ri-mail-line"></i></span>
+              <div>
+                <h5>Email</h5>
+                <p>contact@hotelmanhattan.com</p>
+              </div>
+            </li>
+            <li>
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              <div>
+                <h5>Address</h5>
+                <p>123 First Avenue, New York, NY 10001</p>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Hotel Manhattan. All rights reserved.
+      </div>
+    </footer>
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
